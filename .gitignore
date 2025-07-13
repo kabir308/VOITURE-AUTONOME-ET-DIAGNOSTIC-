@@ -1,87 +1,28 @@
-# Bazel
-bazel-*
-
-# Temporary files
-*.pyc
+# Vim
 *.swp
 *.swo
 
-# Generated files
-*.result
-py_proto
+# Visual Studio Code
+.vscode/
+*.code-workspace
 
-# Eclipse IDE files
-.project
-.cproject
-.settings
-.classpath
+# colcon
+build/
+install/
+log/
+/src/
 
-# IntelliJ files
-.idea
+# Python
+*.pyc
 
-# VS Code files
-.vscode
+# Jetbrains
+.idea/
 
-# Atom IDE files
-*.gch
+# rviz Screen Capture
+capture/
 
-# Logs
-nohup.out
-*.bak
-*.stderr
-*.stdout
+# CodeChecker
+.codechecker/
 
-# Editor configs
-.ycm_extra_conf.py
-
-# Data
-/data
-modules/tools/ota/update.ini
-modules/tools/ota/vehicle_info.pb.txt
-docker/build/syspkgs.txt
-
-# Localization
-modules/localization/msf/local_map/test_data/ndt_map/map_data
-
-# Doxygen
-cyber/doxy-docs/build
-cyber/doxy-docs/xml
-
-# Esd can lib
-third_party/can_card_library/esd_can/include
-third_party/can_card_library/esd_can/lib
-
-# Map data files
-modules/map/data
-
-# python proto
-*_pb2.py
-
-# calibration files
-modules/calibration/data
-
-# Data bag
-docs/demo_guide/*.bag
-docs/demo_guide/*.record
-
-# Bash Environment
-.dev_bash_hist
-
-# bazel cache and others
-.cache/
-.apollo.bazelrc
-.errors.log
-
-# Directory for binary distribution
-output
-
-# Flamegraph files
-tools/FlameGraph
-
-# jetbrain profiler
-.DS_Store
-
-# dv plugins
-modules/studio_connector
-
-#WORKSPACE
+# Node.js
+node_modules/

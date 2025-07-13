@@ -1,12 +1,6 @@
-bazel-*
-.cache
+# This file is automatically synced from:
+# https://github.com/autowarefoundation/sync-file-templates
+# To make changes, update the source repository and follow the guidelines in its README.
 
-# Temporarily settings for markdown prettier
-# tools
-
-*.py
-*.sh
-*.bash
-*.bashrc
-*.bazelrc
-*.html
+*.param.yaml
+*.rviz
