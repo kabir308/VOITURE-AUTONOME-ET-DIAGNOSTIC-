@@ -1,0 +1,25 @@
+# Kubernetes deployment configuration
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: automotive-ai-ecosystem
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: automotive-ai
+  template:
+    metadata:
+      labels:
+        app: automotive-ai
+    spec:
+      containers:
+      - name: perception-service
+        image: automotive-ai/perception:latest
+        resources:
+          requests:
+            nvidia.com/gpu: 1
+      - name: diagnostic-service
+        image: automotive-ai/diagnostic:latest
+      - name: planning-service
+        image: automotive-ai/planning:latest
